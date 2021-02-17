@@ -1,0 +1,64 @@
+import numpy as np
+
+#a
+v1 = np.zeros(10)
+v1[6] = 1
+
+#b
+v2 = np.arange(10, 50)
+
+#c
+v3 = np.flip(v2)
+
+#d
+v4 = np.arange(0, 9).reshape(3, 3)
+
+#e
+v5 = np.array([1,2,0,0,4,0])
+np.where(v5 != 0)
+
+#f
+v6 = np.random.randint(1000, size=30)
+np.mean(v6)
+
+#g
+v7 = np.ones(16).reshape(4,4)
+v7[1,1=0; v7[1,2]=0; v7[2,1])=0; v7[2,2]=0;
+
+#h
+v8 = np.array([[0,1]*4, [1,0]*4]*4)
+
+#i
+v9 = np.tile(np.array([[1,0], [0, 1]]), (4,4))
+
+#j
+Z = arange(11)
+Z[np.logical_and(Z>3, Z<8)] *= -1
+print(Z)
+
+#k
+Z = np.random.random(10) 
+Z = np.sort(Z)
+print(Z)
+
+#l
+A = np.random.randint(0,2,5)
+B = np.random.randint(0,2,5)
+equal = np.array_equal(A,B)
+print(equal)
+
+#m
+Z = np.arange(10, dtype=np.int32)
+print(Z.dtype)
+Z = Z.astype(np.float32)
+print(Z.dtype)
+
+#n
+A = np.arange(9).reshape(3,3)
+B = A + 1
+C = np.dot(A,B)
+D = C[[0,1,2], [0,1,2]] 
+#np.diagonal(C) 
+print(D)
+
+
