@@ -1,0 +1,18 @@
+Filename: matmult_opt.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     6   50.668 MiB   50.668 MiB           1   @profile
+     7                                         def multiplyMat(N):
+     8                                         # NxN matrix
+     9   51.172 MiB    0.504 MiB           1   	X=np.random.rand(N, N)
+    10                                         
+    11                                         # Nx(N+1) matrix
+    12   51.652 MiB    0.480 MiB           1   	Y=np.random.rand(N,N+1)
+    13                                         
+    14   55.637 MiB    3.984 MiB           1   	result = np.matmul(X, Y)
+    15                                         
+    16                                         
+    17   55.637 MiB    0.000 MiB           1   	return result
+
+

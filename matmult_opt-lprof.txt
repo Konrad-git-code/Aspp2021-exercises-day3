@@ -1,0 +1,22 @@
+Wrote profile results to matmult_opt.py.lprof
+Timer unit: 1e-07 s
+
+Total time: 0.0046427 s
+File: matmult_opt.py
+Function: multiplyMat at line 6
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7                                           def multiplyMat(N):
+     8                                           # NxN matrix
+     9         1       6145.0   6145.0     13.2  	X=np.random.rand(N, N)
+    10                                           
+    11                                           # Nx(N+1) matrix
+    12         1       6069.0   6069.0     13.1  	Y=np.random.rand(N,N+1)
+    13                                           
+    14         1      34189.0  34189.0     73.6  	result = np.matmul(X, Y)
+    15                                           
+    16                                           
+    17         1         24.0     24.0      0.1  	return result
+
